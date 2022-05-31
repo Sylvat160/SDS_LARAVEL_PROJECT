@@ -1,0 +1,529 @@
+/* 
+* ============================================================
+* PAGE DE CONNEXION
+* ============================================================
+*/
+body {
+    background-image: url(mol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    position: relative;
+    right: 550px;
+}
+.formulaire{
+    position: relative;
+    bottom: 50px;
+}
+.formulaire h1 {
+    position: relative;
+    bottom: 30px;
+    left: 150px;
+}
+
+.formulaire form p input {
+    width: 350px;
+    height: 75px;
+    border-radius: 50px;
+    background-color: #476468;
+
+}
+
+.formulaire form .entre1 input {
+    position: relative;
+    bottom: 45px;
+    right: 50px;
+    z-index: -1;
+    padding-left: 70px;
+    color: #fff;
+}
+
+
+.formulaire input::placeholder {
+    font-size: 1.2rem;
+    position: relative;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.formulaire form .entre2 input {
+    position: relative;
+    bottom: 45px;
+    right: -50px;
+    z-index: 0;
+    padding-left: 70px;
+    color: #fff;
+
+}
+
+.formulaire form .entre2 {
+    position: relative;
+    right: 50px;
+}
+.formulaire form .entre2 label img {
+   transform: scale3d(1, 1, 1);
+   
+}
+
+.formulaire button {
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+    width: 400px;
+    height: 75px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    position: relative;
+    left: 20px;
+    transition: .4s linear;
+    position: relative;
+    cursor: pointer;
+}
+
+.formulaire button:hover {
+    
+    color: #fff;
+}
+.formulaire button::before {
+    content: '';
+    width: 0;
+    height: 70px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #476468;
+    color: #fff;
+    border-radius: 40px;
+    z-index:-1 ;
+    transition: .8s linear;
+    
+}
+
+.formulaire button:hover::before {
+    width: 395px;
+    
+
+
+}
+    
+
+.footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer svg {
+    position: relative;
+    right: 80%;
+}
+
+.footer p {
+    position: relative;
+    left: 80%;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 679px) {
+
+    /* 
+* ============================================================
+* PAGE DE CONNEXION
+* ============================================================
+*/
+
+    .logo {
+        right: 100px;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .formulaire{
+        position: relative;
+        bottom: 0;
+    }
+    .formulaire h1 {
+        position: relative;
+        bottom: 0;
+        left: 100px;
+    }
+
+    form p input {
+        width: 55%;
+        height: 55px;
+        border-radius: 50px;
+        background-color: #476468;
+        
+    
+    }
+    form p label img {
+        width: 90px;
+    }
+
+    form .entre1 input {
+        position: relative;
+        bottom: 45px;
+        right: 50px;
+        z-index: -1;
+        padding-left: 70px;
+        color: #fff;
+    }
+    
+}
+
+@media screen and (min-width: 680px) and (max-width: 1279px) {
+
+/* 
+* ============================================================
+* PAGE DE CONNEXION
+* ============================================================
+*/
+    .logo {
+        right: 300px;
+    }
+    
+}
+
+
+/* 
+* ============================================================
+* PAGE D'INCRIPTION ADMINISTRATEUR
+* ============================================================
+*/
+
+
+.formulaireIn{
+    position: relative;
+    bottom: 50px;
+}
+.formulaireIn h1 {
+    position: relative;
+    bottom: 30px;
+    left: 150px;
+}
+
+.formulaireIn form {
+    height: 600px;
+}
+
+.formulaireIn form p input {
+    width: 350px;
+    height: 75px;
+    border-radius: 50px;
+    background-color: #476468;
+
+}
+
+.formulaireIn form .entre1 input {
+    position: relative;
+    bottom: 45px;
+    right: 50px;
+    z-index: -1;
+    padding-left: 70px;
+    color: #fff;
+}
+
+
+.formulaireIn input::placeholder {
+    font-size: 1.2rem;
+    position: relative;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.formulaireIn form .entre2 input {
+    position: relative;
+    bottom: 45px;
+    right: -50px;
+    z-index: 0;
+    padding-left: 70px;
+    color: #fff;
+
+}
+
+.formulaireIn form .entre2 {
+    position: relative;
+    right: 50px;
+}
+.formulaireIn form .entre2 label img {
+   transform: scale3d(1, 1, 1);
+   
+}
+
+.formulaireIn button {
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+    width: 400px;
+    height: 75px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    position: relative;
+    left: 20px;
+    bottom: 250px;
+    transition: .4s linear;
+    position: relative;
+    cursor: pointer;
+}
+
+.formulaireIn button:hover {
+    
+    color: #fff;
+    font-size: 1.2rem;
+}
+.formulaireIn button::before {
+    content: '';
+    width: 0;
+    height: 70px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #476468;
+    color: #fff;
+    border-radius: 40px;
+    z-index:-1 ;
+    transition: .8s linear;
+    
+}
+
+.formulaireIn button:hover::before {
+    width: 395px;
+}
+
+.formulaireIn form .troisp {
+    position: relative;
+    right: 50%;
+}
+
+.formulaireIn form .deuxd {
+    position: relative;
+    left: 50%;
+    bottom: 380px;
+}
+
+.footerA {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerA svg {
+    position: relative;
+    right: 90%;
+}
+
+.footerA p {
+    position: relative;
+    left: 90%;
+    font-size: 1.5rem;
+}
+
+
+/*
+* ============================================================
+* PAGE D'ACCEUIL APRES CONNEXION
+* ============================================================ 
+ */
+ #acceuil {
+     display: flex !important;
+     justify-content: center !important;
+     align-items: center !important;
+     text-align: center !important;;     
+ }
+
+#acceuil .partone{
+     width: 30rem;
+     height: 35rem;
+     background-color: rgba(255, 255, 0, 0.548) !important;
+     border-radius: 20px;
+ }
+
+#acceuil .parttwo , .parttree {
+        width: 27rem;
+        height: 32rem;
+        backdrop-filter: blur(10px) !important;
+       border-radius: 20px;
+       border: 1px solid rgba(14, 13, 13, 0.397);
+       display: none;
+      
+ }
+
+
+ .partone h1 {
+     padding-top: 10px;
+ }
+
+ .partone div p a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+
+ }
+ .hide {
+    transform: translate(200px) !important;
+ }
+
+ .parttwo section form , #formT{
+     display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        
+       
+ }
+
+
+ #formE div , #formT div {
+    width: 230px;
+   height: 40px;
+   border-radius: 20px;
+   margin-bottom: 10px; 
+   background: #47646883;
+   color: #fff;
+   font-size: medium;
+   display: flex !important;
+   align-items: center;
+}
+#formT div , #formT button  {
+    position: relative;
+    top:80px;
+}
+#formE div label , #formT div label {
+    padding-left: 10px;
+}
+#formE div input , #formT div input {
+    width: 190px;
+   height: 40px;
+   border: none;
+    border-radius: 20px;
+   background: none;
+   color: #fff;
+   font-size: medium;
+   position: relative;
+   left: 15px;
+}
+
+ #formE div input::placeholder , #formT div input::placeholder {
+    font-size: 1rem;
+    color: #fff;
+    opacity: 0.7;
+    
+ }
+
+ 
+#formE button , #formT button { 
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+    width: 120px;
+    height: 35px;
+    border-radius: 40px;
+    font-size: 1rem;
+    position: relative;
+    left: 40px;
+    transition: .4s linear;
+    position: relative;
+    cursor: pointer;
+}
+
+#formE button:hover , #formT button:hover {
+    
+    color: #fff;
+}
+#formE button::before , #formT button::before {
+    content: '';
+    width: 0;
+    height: 30px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #476468;
+    color: #fff;
+    border-radius: 40px;
+    z-index:-1 ;
+    transition: .8s linear;
+    
+}
+
+#formE button:hover::before , #formT button:hover::before {
+    width: 115px;
+}
+
+#formE .tuteur {
+    background: none !important;
+    border: none !important;
+
+}
+#formE .tuteur select {
+    background: none !important;
+    border: none !important;
+    
+}
+
+
+
+
+
+#myTable  thead tr th {
+    width: 150px;
+}
+
+#myTable tbody tr  {
+    backdrop-filter: blur(10px) !important;
+    background: #306fa600 !important;
+    height: 25px;
+}
+
+#myTable tbody tr .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.llink1 , .llink2 , .llink3 {
+    text-decoration: none !important;
+    width: 30px !important;
+
+}
+
+.llink1 {
+    color:black !important;
+    font-size: 1rem;
+}
+.llink2 {
+    color:rgb(68, 65, 218) !important;
+    font-size: 1rem;
+    position: relative !important;
+    right: 10px !important;
+}
+.llink3 {
+    color:rgb(253, 0, 0) !important;
+    font-size: 1rem;
+    position: relative !important;
+    right: 20px !important;
+}
+
+#modif {
+    backdrop-filter: blur(10px) !important;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5) !important;
+    width: 40%;
+    border-radius: 20px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
