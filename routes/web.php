@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EtudiantController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UfrController;
 
@@ -18,3 +19,5 @@ Route::get('/', [UfrController::class , 'index'])->name('connexion');
 Route::get('/AdminAdd', [UfrController::class , 'inscriA']);
 Route::get('/acceuil', [UfrController::class , 'acceuil']);
 Route::get('/liste', [UfrController::class , 'liste']);
+Route::get('/edit/{id}', [UfrController::class , 'edit'])->name('modifier');
+Route::post('/createE', [EtudiantController::class, 'store'])->name('etudiant.create');

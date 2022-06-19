@@ -20,8 +20,9 @@
         <div class="parttwo" id="parttwo">
             <h1> Ajouter un étudiant </h1>
             <section>
-                <form action="" method="POST" id="formE">
 
+                <form action=" {{ route('etudiant.create') }} " method="POST" id="formE" enctype="multipart/form-data">
+                    @csrf
                     <div>
                         <label for="nomE"><i class="fa-solid fa-user"></i></label>
                         <input type="text" name="nomE" placeholder="Nom">
@@ -34,7 +35,7 @@
 
                     <div>
                         <label for="dateE"><i class="fa-regular fa-calendar"></i></label>
-                        <input type="date" name="dateE" placeholder="Date de naissance">
+                        <input type="text" name="date_naissance" placeholder="Date de naissance">
                     </div>
 
                     <div>
@@ -50,9 +51,13 @@
                     <div class="tuteur">
                         <select name="tuteur" id="">
                             <option value="">choisir un tuteur</option>
+                            <option value=""> Sylva </option>
                            
                         </select>
                     </div>
+
+                    <label for="avatar"> Choose a picture</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/png , image/jpeg">
 
                     <button type='submit' name="infoE" value="ajouter"> Ajouter </button>
 

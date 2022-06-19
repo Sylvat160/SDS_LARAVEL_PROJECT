@@ -41,7 +41,7 @@
                     <td>{{$etudiant->numeroE}}</td>
                     <td class="action">
                         <a href="" class="btn llink1 btn"><i class='fas fa-eye'></i></a>
-                        <a href="" class="btn llink2 btn"><i class='fas fa-edit'></i></a> 
+                        <a href="{{ route('modifier', ['id' => $etudiant->id]) }}" class="btn llink2 btn"><i class='fas fa-edit'></i></a> 
                         <a href="" class="btn llink3 btn"><i class='fas fa-trash'></i></a>
         
                     </td>
